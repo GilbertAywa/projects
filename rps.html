@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rps.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <div class="prompt-container js-prompt-container">
+    <div class="prompt">
+      <h1>Reset Score</h1>
+      <p>Are you sure?</p>
+      <button class="yes-btn js-yes-btn">Yes</button>
+      <button class="no-btn js-no-btn">No</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <button class="rock-btn js-rock-btn">R</button>
+    <button class="paper-btn js-paper-btn">P</button>
+    <button class="scissors-btn js-scissors-btn">S</button>
+    <div class="results js-results"></div>
+    <div class="move js-move"></div>
+    <div class="score js-score"></div>
+    <div class="action">
+      <button class="reset-btn js-reset-btn">Reset Score</button>
+      <button class="autoplay-btn js-autoplay-btn">AutoPlay</button>
+    </div>
+  </div>
+  <script src="rps.js"></script>
+  <!-- <script src="rps-oop.js"></script> -->
+</body>
+</html>

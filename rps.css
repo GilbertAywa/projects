@@ -1,0 +1,143 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: monospace;
+  position: relative;
+}
+
+.prompt-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80vh;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  animation: pop .3s;
+  display: none;
+}
+
+.prompt{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  padding: 20px 30px;
+  text-align: center;
+  background-color: #000000b7;
+  box-shadow: 0 0 4px #ffffff41;
+}
+
+@keyframes pop {
+  0%{
+    transform: scale(0);
+  }100%{
+    transform: scale(1);
+  }
+}
+.prompt h1{
+  color: red;
+}
+
+.prompt p{
+  color: yellow;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.prompt button{
+  width: 70px;
+  height: 30px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  margin-inline: 7px;
+  cursor: pointer;
+}
+
+.prompt .yes-btn{
+  background-color: red;
+}
+
+.container{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container h1{
+  color: #0f0;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.container button{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-inline: 15px;
+  margin-block: 20px;
+  color: #00ff00;
+  background-color: #000000;
+  box-shadow: 1px 1px 2px #00ff00;
+  cursor: pointer;
+}
+
+.action button{
+  width: 120px;
+  height: 35px;
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.container button:active{
+  transform: scale(.98);
+}
+
+.container .results{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.container .move{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  width: fit-content;
+  justify-content: space-around;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding-left: 50px;
+}
+
+.move .move-icon .you,
+.move .move-icon .comp{
+  background-color: #000000;
+  padding: 6px 10px 6px 10px;
+  border-radius: 50%;
+  margin-inline: 15px;
+  box-shadow: .5px .5px 1px #00ff00;
+  color: #00ff00;
+}
+
+.container .score{
+  color: gold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 8px;
+}

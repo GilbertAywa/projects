@@ -1,0 +1,29 @@
+@media (max-width: 425px) {
+  body{ 
+    padding-top: 200px;
+  }
+
+  .prompt-container{
+    top: 200px;
+    height: 400px;
+    animation: pop .3s;
+  }
+
+  .prompt{
+    left: 40%;
+    transform: translateX(-29%);
+    top: 300px;
+    padding: 20px 20px;
+  }
+
+  @keyframes pop {
+    0%{
+      opacity: 0;
+    }100%{
+      opacity: 1;
+    }
+  }
+  
+}
+
+
